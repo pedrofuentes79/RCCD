@@ -1,0 +1,14 @@
+2.1)
+A pesar de estar en la misma máquina, el scheduler puede justo sacarle la CPU al proceso server/cliente, haciendo que haya pequeños cortes. 
+
+
+3.1)
+Vemos que la primer subida (launcher_output_rtt_only.png) se produce a los 5 segundos de empezar (la rafaga de 10 procesos). Esto queda como el segundo baseline.
+
+Luego hay 5 picos (cada uno sube el baseline), que corresponden a los 5 procesos separados por un segundo. 
+
+Luego estos van terminando y se vuelve al segundo baseline. Finalmente hay un gran pico corto, y se vuelve al primer baseline.
+
+Este ultimo pico corto (y alto) no sé a que se corresponde. Por ahí a la muerte de un proceso, que toma el CPU? No sé. 
+Al repetir el experimento se produjo un pico similar al final, pero más bajo.  
+
