@@ -1,0 +1,59 @@
+# STP Snapshot
+# Timestamp: 2026-09-08T21:36:38
+
+
+===== BRIDGE s4 =====
+---- s4 ----
+Root ID:
+  stp-priority  32768
+  stp-system-id   0e:2f:ee:bb:93:46
+  stp-hello-time  2s
+  stp-max-age     20s
+  stp-fwd-delay   15s
+  root-port       s4-eth3
+  root-path-cost  2
+
+Bridge ID:
+  stp-priority  32768
+  stp-system-id   b2:bd:f8:d6:c2:4e
+  stp-hello-time  2s
+  stp-max-age     20s
+  stp-fwd-delay   15s
+
+  Interface  Role       State      Cost  Pri.Nbr 
+  ---------- ---------- ---------- ----- -------
+  s4-eth3    root       forwarding 2     128.1
+  s4-eth1    designated forwarding 2     128.2
+  s4-eth4    alternate  blocking   2     128.3
+  s4-eth2    designated forwarding 2     128.4
+
+====================================================
+# STP Snapshot
+# Timestamp: 2026-09-08T21:37:16
+
+
+===== BRIDGE s4 =====
+---- s4 ----
+Root ID:
+  stp-priority  4096
+  stp-system-id   b2:bd:f8:d6:c2:4e
+  stp-hello-time  2s
+  stp-max-age     20s
+  stp-fwd-delay   15s
+  This bridge is the root
+
+Bridge ID:
+  stp-priority  4096
+  stp-system-id   b2:bd:f8:d6:c2:4e
+  stp-hello-time  2s
+  stp-max-age     20s
+  stp-fwd-delay   15s
+
+  Interface  Role       State      Cost  Pri.Nbr 
+  ---------- ---------- ---------- ----- -------
+  s4-eth3    designated forwarding 2     128.1
+  s4-eth1    designated forwarding 2     128.2
+  s4-eth4    designated listening  2     128.3
+  s4-eth2    designated forwarding 2     128.4
+
+====================================================
